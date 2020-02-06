@@ -1,3 +1,5 @@
+import { InvoiceDetailsComponent } from './pages/invoice-details/invoice-details.component';
+import { InvoiceTrackingComponent } from './pages/invoice-tracking/invoice-tracking.component';
 import { TrademarkOppositionComponent } from './pages/trademark-opposition/trademark-opposition.component';
 import { TrademarkRenewalComponent } from './pages/trademark-renewal/trademark-renewal.component';
 import { TrademarkSearchComponent } from './pages/trademark-search/trademark-search.component';
@@ -6,6 +8,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TrademarkRegistrationComponent } from './pages/trademark-registration/trademark-registration.component';
 import { ResponseOfRefusalComponent } from './pages/response-of-refusal/response-of-refusal.component';
+import { SectorMonitoringComponent } from './pages/sector-monitoring/sector-monitoring.component';
 
 
 const routes: Routes = [
@@ -14,7 +17,10 @@ const routes: Routes = [
  { path : 'trademark-registration', component : TrademarkRegistrationComponent },
  { path : 'trademark-renewal', component : TrademarkRenewalComponent },
  { path : 'response-of-refusal', component : ResponseOfRefusalComponent },
- { path : 'trademark-opposition', component : TrademarkOppositionComponent }
+ { path : 'trademark-opposition', component : TrademarkOppositionComponent },
+ { path : 'sector-monitoring', component : SectorMonitoringComponent },
+ { path : 'invoice-tracking', component : InvoiceTrackingComponent },
+ { path : 'invoice-details/:id', component : InvoiceDetailsComponent }
 
 
 ];

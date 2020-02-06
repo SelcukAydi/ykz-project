@@ -1,3 +1,5 @@
+import { InvoiceDetailsModule } from './pages/invoice-details/invoice-details.module';
+import { SectorMonitoringModule } from './pages/sector-monitoring/sector-monitoring.module';
 import { TrademarkOppositionModule } from './pages/trademark-opposition/trademark-opposition.module';
 import { ResponseOfRefusalModule } from './pages/response-of-refusal/response-of-refusal.module';
 import { TrademarkRenewalModule } from './pages/trademark-renewal/trademark-renewal.module';
@@ -12,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationModule } from './navigation/navigation.module';
 import { TrademarkRegistrationModule } from './pages/trademark-registration/trademark-registration.module';
+import { InvoiceTrackingModule } from './pages/invoice-tracking/invoice-tracking.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { TrademarkRegistrationModule } from './pages/trademark-registration/trad
     TrademarkRegistrationModule,
     TrademarkRenewalModule,
     ResponseOfRefusalModule,
-    TrademarkOppositionModule
+    TrademarkOppositionModule,
+    SectorMonitoringModule,
+    InvoiceTrackingModule,
+    InvoiceDetailsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

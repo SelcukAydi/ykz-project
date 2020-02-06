@@ -1,3 +1,4 @@
+import { NotificationService } from './../../@sia/services/notification.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private notificationService : NotificationService) { }
 
   ngOnInit() {
+    this.notificationService.channel.bind('my-event', data => {
+      console.log('new event fired up');
+    });
   }
 
 }

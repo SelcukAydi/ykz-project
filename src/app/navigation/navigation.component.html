@@ -17,10 +17,7 @@
                         <li><a [routerLink]="['/recordals']" routerLinkActive="router-link-active" >Recordals</a></li>
                         <li><a [routerLink]="['/response-of-refusal']" routerLinkActive="router-link-active" >Response to Refusal</a></li>
                         <li><a [routerLink]="['/trademark-opposition']" routerLinkActive="router-link-active" >Trademark Opposition</a></li>
-                        <li><a href="email-compose.html">Sector Monitoring</a></li>
-                        <li><a href="email-compose.html">Validation</a></li>
-                        <li><a href="email-compose.html">Translation</a></li>
-                        <li><a href="email-compose.html">Patent Drafting</a></li>
+                        <li><a [routerLink]="['/sector-monitoring']" routerLinkActive="router-link-active" >Sector Monitoring</a></li>
                     </ul>
                 </li>
 
@@ -35,6 +32,18 @@
 
                 <li><a href="form-elements.html">Consultancy</a></li>
 
+            </ul>
+
+            <ul class="metismenu" id="side-menu">
+                <li class="menu-title">Your Specific Services</li>
+
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="ti-email"></i><span> User Services <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                    <ul class="submenu">
+                        <li><a [routerLink]="['/invoice-tracking']" routerLinkActive="router-link-active" >Invoice Tracking</a></li>
+                        <li><a [routerLink]="['/your-processes']" routerLinkActive="router-link-active" >Your Processes</a></li>
+                    </ul>
+                </li>
             </ul>
 
         </div>
